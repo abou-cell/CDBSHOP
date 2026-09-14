@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-  <application android:theme="@style/AppTheme" android:label="VCBD Admin" android:allowBackup="false" android:usesCleartextTraffic="false">
+  <application android:theme="@style/AppTheme" android:label="CBD OM Admin" android:icon="@drawable/ic_cbd_om" android:roundIcon="@drawable/ic_cbd_om" android:allowBackup="false" android:usesCleartextTraffic="false">
     <activity android:name=".MainActivity" android:screenOrientation="portrait" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
