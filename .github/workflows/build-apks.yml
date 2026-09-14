@@ -1,4 +1,4 @@
-name: Build VCBD Offline APKs
+name: Build CBD OM Offline APKs
 on:
   push:
     branches: [ main ]
@@ -25,11 +25,11 @@ jobs:
       - name: Collect APKs
         run: |
           mkdir -p dist
-          cp client/build/outputs/apk/debug/client-debug.apk dist/VCBD-Client-Offline-v0.2.apk
-          cp admin/build/outputs/apk/debug/admin-debug.apk dist/VCBD-Admin-Offline-v0.2.apk
+          cp client/build/outputs/apk/debug/client-debug.apk dist/CBD-OM-Client-Offline-v0.4.apk
+          cp admin/build/outputs/apk/debug/admin-debug.apk dist/CBD-OM-Admin-Offline-v0.4.apk
           sha256sum dist/*.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: VCBD-Offline-APKs-v0.2
+          name: CBD-OM-Offline-APKs-v0.4
           path: dist/*.apk
           retention-days: 30
